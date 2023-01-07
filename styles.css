@@ -1,0 +1,393 @@
+:root {
+    --dominant: rgb(15, 15, 15);
+    --contrast: white;
+    --highlight1: purple;
+    --highlight2: rgb(43, 39, 39);
+    --highlight3: rgb(56, 50, 50);
+    --highlight4: purple;
+    --highlight5: rgb(43, 39, 39);
+    --highlight6: rgb(56, 50, 50);
+    --btn1: purple;
+    --btn2: rgb(148, 16, 148);
+    --btn3: rgb(196, 33, 196);
+    --accent1: #181414;
+    --accent2: rgb(43, 39, 39);;
+    --text-color: rgb(243, 235, 235);
+}
+::-webkit-scrollbar {
+    width: 7px;
+  }
+::-webkit-scrollbar-track {
+    background: rgb(243, 237, 237);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 204, 204);
+}
+html, body {
+    height: 100%;
+    overflow: clip;
+    background-color: var(--dominant);
+}
+.navbar, .offcanvas {
+    background-color: var(--dominant);
+}
+.search-xs .form-control, .search-md-xl .form-control {
+    padding-left: 35px;
+}
+.search-xs i, .search-md-xl i {
+    justify-content: center;
+    align-self: center;
+    padding-left: 10px;
+}
+.offcanvas-title, .offcanvas-body .list-group h5 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+    margin-left: 5px;
+    color: var(--text-color);
+}
+.offcanvas-body {
+    padding: 0;
+}
+.offcanvas-body .list-group-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: calc(100% - 10px);
+    padding-left: 20px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: var(--dominant);
+    color: var(--text-color);
+    -webkit-transition: 75ms;
+    -moz-transition: 75ms;
+    transition: 75ms;
+}
+.offcanvas-body .list-group-item:hover {
+    background-color: var(--highlight2);
+    color: white;
+}
+.offcanvas-body .list-group-item:focus:active {
+    background-color: var(--highlight3);
+    color: white;
+}
+.offcanvas-body .list-group > .active, .offcanvas-body .list-group > .active:hover {
+    background-color: var(--highlight1);
+}
+.offcanvas-body .list-group-item .bi, .search-xs i, .search-md-xl i {
+    pointer-events: none;
+    height: initial;
+}
+.compose-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    margin: 10px 10px 15px 10px;
+    padding: 15px 20px 15px 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow:  0 0 7px 3px #f0f;
+    background-color: var(--btn1);
+    color: white;
+}
+.compose-btn:hover {
+    background-color: var(--btn2);
+}
+.compose-btn:focus:active {
+    background-color: var(--btn3);
+}
+.compose-btn .bi, .offcanvas-title, .offcanvas-body .list-group h5 {
+    pointer-events: none;
+    height: initial;
+}
+.icon-bar {
+    background-color: var(--accent2);
+    z-index: 3;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.split-button {
+    padding-left: 1px;
+}
+.split-button .dropdown-menu .dropdown-item {
+    padding-left: 28%;
+}
+.button-split-left, .button-split-right {
+    padding: 4px;
+    background-color: var(--accent2);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+}
+.button-split-left:hover, .button-split-right:hover, .button-split-left:active:focus, .button-split-right:active:focus {
+    background-color: var(--accent2);
+    color: var(--text-color);
+}
+.button-split-left #checkboxNoLabel {
+    margin-right: 0;
+}
+.list-of-actions {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 10px;
+    margin-left: 10px;
+    color: var(--text-color);
+}
+.list-of-actions .vertical-divider {
+    height: 25px;
+}
+.col-email {
+    height: 30vh;
+    padding: 0;
+    background-color: var(--accent1);
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+.col-email-contents {
+    height: calc(70vh - 153px);
+    padding: 0;
+    border-top: 3px solid var(--highlight3);
+    background-color: var(--contrast);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    z-index: 2;
+}
+.email-contents-div {
+    padding: 10px;
+    overflow: hidden;
+}
+.email-contents-row1 .bi {
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+.email-contents-row1 .bi-three-dots-vertical {
+    margin-right: -3px;
+}
+.email-contents-row2 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.date {
+    font-size: 14px;
+    margin-left: 15px;
+}
+.email-content-date {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.list-group {
+    border-radius: 0px;
+}
+.col-email .list-group-item {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(41, 40, 40);
+    background-color: var(--accent1);
+    color: var(--text-color);
+    -webkit-transition: 75ms;
+    -moz-transition: 75ms;
+    transition: 75ms;
+}
+.col-email .list-group-item:hover {
+    background-color: var(--highlight5);
+    color: white;
+}
+.col-email .list-group-item:focus:active {
+    background-color: var(--highlight6);
+}
+.col-email .list-group > .active, .col-email .list-group > .active:hover {
+    background-color: var(--highlight4);
+    border-color: rgb(41, 40, 40);
+}
+p {
+    margin-bottom: auto;
+}
+.list-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.check-and-star {
+    align-self: center;
+    padding-left: 1px;
+    min-width: 85px;
+}
+.check-and-star .form-check-inline {
+    margin-right: 5px;
+    margin-top: 8px;
+}
+.check-and-star .bi-star {
+    margin-right: 25px;
+}
+.email-info {
+    flex-grow: 1;
+}
+.name {
+    font-weight: bold;
+}
+#formControlTextarea {
+    margin-top: 40px;
+    padding-bottom: 60px;
+    min-height: 90px;
+    height: 150px;
+    scroll-padding-bottom: 60px;
+}
+.text-area .form-label {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.text-area .bi {
+    position: absolute;
+    bottom: 10px;
+}
+.text-area .send-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.bi {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.bi:hover {
+    font-size: 20px;
+}
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: var(--dominant);
+    color: var(--text-color);
+}
+.bottom-bar p {
+    margin-top: 3px;
+}
+.bottom-bar .bi-arrow-clockwise, .text-area .bi-paperclip {
+    font-size: 20px;
+}
+.bottom-bar .bi-arrow-clockwise:hover, .text-area .bi-paperclip:hover {
+    font-size: 25px
+}
+.bottom-bar-right {
+    gap: 30px;
+}
+.offcanvas-body .list-group h5, .search-md-xl, .nav-page {
+    display: none;
+}
+@media (min-width: 768px) {
+    .container-fluid {
+        padding-left: 0
+    }
+    .nav-col {
+        padding-right: 0;
+    }
+    .offcanvas-body .list-group-item {
+        width: 100%;
+    }
+    .offcanvas-body .list-group h5 {
+        display: flex;
+        margin-top: 10px;
+        margin-left: 22px;
+    }
+    .search-xs .form-control, .search-xs .bi-search {
+        display: none;
+    }
+    .compose-btn {
+        margin-top: 10px;
+    }
+    .search-md-xl {
+        display: block;
+        background-color: var(--dominant);
+        z-index: 4;
+    }
+    .col-12.search-md-xl {
+        padding-left: 0;
+        width: 40vw;
+    }
+    .nav-col {
+        height: 100vh;
+        overflow-y: auto;
+        scrollbar-width: thin;
+    }
+    .icon-bar {
+        border-top-left-radius: 10px;
+    }
+    .col-email {
+        height: 35vh;
+    }
+    .col-email-contents {
+        height: calc(65vh - 135px);
+        border-bottom-left-radius: 10px;
+    }
+    .email-content-date {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 4px;
+    }
+    .bottom-bar {
+        justify-content: flex-end;
+    }
+    .bottom-bar .bi-arrow-clockwise {
+        margin-right: 30px;
+    }
+}
+@media (min-width: 1200px) {
+    .right-col {
+        border: none;
+    }
+    .nav-page {
+        display: flex;
+        align-items: center;
+        color: var(--text-color);
+    }
+    .nav-page p {
+        margin-top: 3px;
+    }
+    .nav-page .bi-arrow-clockwise {
+        font-size: 20px;
+    }
+    .nav-page .bi-arrow-clockwise:hover {
+        font-size: 25px
+    }
+    .nav-page-right {
+        gap: 30px;
+    }
+    .nav-page .bi-arrow-clockwise {
+        margin-right: 30px;
+    }
+    .col-email {
+        height: calc(100vh - 115px);
+        border-bottom-left-radius: 10px;
+    }
+    .col-email-contents {
+        height: calc(100vh - 115px);
+        border-top: none;
+        border-left: 3px solid var(--highlight3);
+        border-bottom-left-radius: 0;
+    }
+    .bottom-bar {
+        display: none;
+    }
+}
+@media (max-width: 356px) {
+    .col-email-contents {
+        height: calc(70vh - 190px);
+    }
+}
+@media (max-width: 341px) {
+    .col-email-contents {
+        height: calc(70vh - 230px);
+    }
+}
