@@ -113,32 +113,41 @@
                         </div>
                         <div class="list-of-actions">
                             <!--Archive selected email-->
-                            <i class="bi bi-archive-fill"></i>
+                            <i class="bi bi-archive-fill" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Archive"></i>
                             <!--Report spam-->
-                            <i class="bi bi-exclamation-octagon-fill"></i>
+                            <i class="bi bi-exclamation-octagon-fill" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Report spam"></i>
                             <!--Trash selected email-->
-                            <i class="bi bi-trash3"></i>
+                            <i class="bi bi-trash3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Trash"></i>
                             <!--Divider-->
                             <div class="vertical-divider d-flex align-self-center">
                                 <div class="vr"></div>
                             </div>
                             <!--Mark as read/unread selected email-->
-                            <i class="bi bi-envelope-check"></i>
+                            <i class="bi bi-envelope-check" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Mark as read"></i>
                             <!--Snooze selected email-->
-                            <i class="bi bi-clock"></i>
+                            <i class="bi bi-clock" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Snooze"></i>
                             <!--Move selected email-->
-                            <i class="bi bi-folder-symlink"></i>
+                            <i class="bi bi-folder-symlink" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Move to"></i>
                             <!--Dropdown menu-->
-                            <i class="bi bi-three-dots-vertical"></i>
+                            <div class="btn-group" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="More">
+                                <i class="bi bi-three-dots-vertical" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Mark as unread</a></li>
+                                        <li><a class="dropdown-item" href="#">Add star</a></li>
+                                        <li><a class="dropdown-item" href="#">Filter messages like this</a></li>
+                                        <li><a class="dropdown-item" href="#">Mute</a></li>
+                                    </ul>
+                                </i>
+                            </div>
                         </div>
                         <div class="nav-page">
                             <!--Refresh page-->
-                            <i class="bi bi-arrow-clockwise "></i>
+                            <i class="bi bi-arrow-clockwise" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Refresh"></i>
                             <!--Navigate page-->
                             <div class="nav-page-right d-flex">
                                 <p>1-50 of 77</p>
-                                <i class="bi bi-chevron-left"></i>
-                                <i class="bi bi-chevron-right"></i>
+                                <i class="bi bi-chevron-left" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Newer"></i>
+                                <i class="bi bi-chevron-right" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Older"></i>
                             </div>
                         </div>
                     </div>
@@ -152,7 +161,7 @@
                                 <div class="list-email">
                                     <div class="check-and-star">
                                         <input class="form-check-input form-check-inline" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
-                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Not starred"></i>
                                     </div>
                                     <div class="email-info text-truncate">
                                         <p class="name text-truncate">John Doe</p>
@@ -170,7 +179,7 @@
                                 <div class="list-email">
                                     <div class="check-and-star">
                                         <input class="form-check-input form-check-inline" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
-                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Not starred"></i>
                                     </div>
                                     <div class="email-info">
                                         <p class="name">Name</p>
@@ -186,7 +195,7 @@
                                 <div class="list-email">
                                     <div class="check-and-star">
                                         <input class="form-check-input form-check-inline" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
-                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Not starred"></i>
                                     </div>
                                     <div class="email-info">
                                         <p class="name">Name</p>
@@ -202,7 +211,7 @@
                                 <div class="list-email">
                                     <div class="check-and-star">
                                         <input class="form-check-input form-check-inline" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
-                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Not starred"></i>
                                     </div>
                                     <div class="email-info">
                                         <p class="name">Name</p>
@@ -218,7 +227,7 @@
                                 <div class="list-email">
                                     <div class="check-and-star">
                                         <input class="form-check-input form-check-inline" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
-                                        <i class="bi bi-star"></i>
+                                        <i class="bi bi-star" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Not starred"></i>
                                     </div>
                                     <div class="email-info">
                                         <p class="name">Name</p>
@@ -239,17 +248,33 @@
                             <div class="row email-contents-row1">
                                 <!--Close email-->
                                 <div class="col-4" >
-                                    <i class="bi bi-x-lg"></i>
+                                    <i class="bi bi-x-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Close"></i>
                                 </div>
                                 <div class="col-8 d-flex justify-content-end ">
                                     <!--Add email to starred-->
-                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Not starred"></i>
                                     <!--Reply-->
-                                    <i class="bi bi-reply-fill"></i>
+                                    <i class="bi bi-reply-fill" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Reply"></i>
                                     <!--Trash-->
-                                    <i class="bi bi-trash3"></i>
+                                    <i class="bi bi-trash3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Trash"></i>
                                     <!--Other actions-->
-                                    <i class="bi bi-three-dots-vertical"></i>
+                                    <div class="btn-group" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="More">
+                                        <i class="bi bi-three-dots-vertical" role="button" data-bs-toggle="dropdown" aria-expanded="false"">
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Reply</a></li>
+                                                <li><a class="dropdown-item" href="#">Forward</a></li>
+                                                <li><a class="dropdown-item" href="#">Filter messages like this</a></li>
+                                                <li><a class="dropdown-item" href="#">Print</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete this message</a></li>
+                                                <li><a class="dropdown-item" href="#">Block "John Doe"</a></li>
+                                                <li><a class="dropdown-item" href="#">Report spam</a></li>
+                                                <li><a class="dropdown-item" href="#">Report phishing</a></li>
+                                                <li><a class="dropdown-item" href="#">Translate message</a></li>
+                                                <li><a class="dropdown-item" href="#">Download message</a></li>
+                                                <li><a class="dropdown-item" href="#">Mark as unread</a></li>
+                                            </ul>            
+                                        </i>
+                                    </div>
                                 </div>
                             </div>
                             <!--Subject, date, sender, recipient, message, and text area-->
@@ -274,7 +299,7 @@
                                 <div class="text-area">
                                     <textarea class="form-control" id="formControlTextarea" rows="3"></textarea>
                                     <label for="formControlTextarea" class="form-label">
-                                        <i class="bi bi-paperclip"></i>
+                                        <i class="bi bi-paperclip" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Attach files"></i>
                                         <button type="button" class="btn btn-primary send-btn" style="cursor: pointer">Send</button>
                                     </label>
                                 </div>
@@ -284,12 +309,12 @@
                     <!--Refresh and navigate pages (tablet/mobile)-->
                     <div class="sticky-bottom bottom-bar">
                         <!--Refresh page-->
-                        <i class="bi bi-arrow-clockwise "></i>
+                        <i class="bi bi-arrow-clockwise" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Refresh"></i>
                         <!--Navigate page-->
                         <div class="bottom-bar-right d-flex">
                             <p>1-50 of 77</p>
-                            <i class="bi bi-chevron-left"></i>
-                            <i class="bi bi-chevron-right"></i>
+                            <i class="bi bi-chevron-left" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Newer"></i>
+                            <i class="bi bi-chevron-right" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Older"></i>
                         </div>
                     </div>
                 </div>
@@ -297,5 +322,6 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

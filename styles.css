@@ -4,14 +4,12 @@
     --highlight1: purple;
     --highlight2: rgb(43, 39, 39);
     --highlight3: rgb(56, 50, 50);
-    --highlight4: purple;
-    --highlight5: rgb(43, 39, 39);
-    --highlight6: rgb(56, 50, 50);
     --btn1: purple;
     --btn2: rgb(148, 16, 148);
     --btn3: rgb(196, 33, 196);
     --accent1: #181414;
-    --accent2: rgb(43, 39, 39);;
+    --accent2: rgb(43, 39, 39);
+    --accent3: #504545;
     --text-color: rgb(243, 235, 235);
 }
 ::-webkit-scrollbar {
@@ -24,12 +22,14 @@
     background-color: rgb(216, 204, 204);
 }
 html, body {
-    height: 100%;
     overflow: clip;
     background-color: var(--dominant);
 }
 .navbar, .offcanvas {
     background-color: var(--dominant);
+}
+.custom-tooltip {
+    --bs-tooltip-bg: var(--accent3);
 }
 .search-xs .form-control, .search-md-xl .form-control {
     padding-left: 35px;
@@ -114,8 +114,13 @@ html, body {
 .split-button {
     padding-left: 1px;
 }
-.split-button .dropdown-menu .dropdown-item {
-    padding-left: 28%;
+.dropdown-item {
+    padding-left: 45px;
+    padding-right: 40px;
+    font-style: normal;
+}
+.dropdown-item:active, .dropdown-item:focus:active {
+    background-color: var(--highlight1);
 }
 .button-split-left, .button-split-right {
     padding: 4px;
@@ -124,7 +129,7 @@ html, body {
     border: none;
     border-radius: 5px;
 }
-.button-split-left:hover, .button-split-right:hover, .button-split-left:active:focus, .button-split-right:active:focus {
+.button-split-left:hover, .button-split-right:hover, .button-split-left:focus:active, .button-split-right:focus:active, .button-split-right:enabled {
     background-color: var(--accent2);
     color: var(--text-color);
 }
@@ -156,7 +161,7 @@ html, body {
     background-color: var(--contrast);
     overflow-y: auto;
     scrollbar-width: thin;
-    z-index: 2;
+    z-index: 1;
 }
 .email-contents-div {
     padding: 10px;
@@ -196,14 +201,14 @@ html, body {
     transition: 75ms;
 }
 .col-email .list-group-item:hover {
-    background-color: var(--highlight5);
+    background-color: var(--highlight2);
     color: white;
 }
 .col-email .list-group-item:focus:active {
-    background-color: var(--highlight6);
+    background-color: var(--highlight3);
 }
 .col-email .list-group > .active, .col-email .list-group > .active:hover {
-    background-color: var(--highlight4);
+    background-color: var(--highlight3);
     border-color: rgb(41, 40, 40);
 }
 p {
@@ -261,7 +266,7 @@ p {
     justify-content: center;
     align-items: center;
 }
-.bi:hover {
+.bi:hover{
     font-size: 20px;
 }
 .bottom-bar {
@@ -310,7 +315,7 @@ p {
     .search-md-xl {
         display: block;
         background-color: var(--dominant);
-        z-index: 4;
+        z-index: 1;
     }
     .col-12.search-md-xl {
         padding-left: 0;
