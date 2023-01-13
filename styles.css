@@ -31,10 +31,18 @@ html, body {
 .custom-tooltip {
     --bs-tooltip-bg: var(--accent3);
 }
+.custom-tooltip2 {
+    --bs-tooltip-bg: var(--accent3);
+    --bs-tooltip-zindex: 1;
+}
+.nav-col {
+    z-index: 9999;
+}
 .search-xs .form-control, .search-md-xl .form-control {
     padding-left: 35px;
 }
 .search-xs i, .search-md-xl i {
+    position: absolute;
     justify-content: center;
     align-self: center;
     padding-left: 10px;
@@ -153,6 +161,7 @@ html, body {
     background-color: var(--accent1);
     overflow-y: auto;
     scrollbar-width: thin;
+    z-index: 2;
 }
 .col-email-contents {
     height: calc(70vh - 153px);
@@ -315,7 +324,7 @@ p {
     .search-md-xl {
         display: block;
         background-color: var(--dominant);
-        z-index: 1;
+        z-index: 3;
     }
     .col-12.search-md-xl {
         padding-left: 0;
